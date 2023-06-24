@@ -29,8 +29,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: semantic-release -e @semantic-release/github
       
-      - name: Set up Docker
-        uses: docker/setup-docker@v2
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
       - name: Set Git Tag
         id: git_tag
