@@ -47,7 +47,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Push Docker image to ECR
-        run: docker push ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.GIT_TAG }}
+        run: docker push ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:$(git describe --abbrev=0 --tags)
 
   deploy:
     name: Deploy to ECS
