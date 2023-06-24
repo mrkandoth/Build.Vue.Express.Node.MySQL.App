@@ -53,7 +53,8 @@ jobs:
       - name: Push Docker image to ECR
         run: docker push ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.GIT_TAG }}
 
-  Deploy to ECS:
+  deploy:
+    name: Deploy to ECS
     needs: Release
     runs-on: ubuntu-latest
     steps:
