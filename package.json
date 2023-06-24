@@ -1,6 +1,6 @@
 {
   "name": "vue-js-node-js-express-mysql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integreate Vue with Express, Serve Vue app with Express on same Server/Port",
   "main": "server.js",
   "scripts": {
