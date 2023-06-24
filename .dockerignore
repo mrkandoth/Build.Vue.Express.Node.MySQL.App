@@ -1,0 +1,23 @@
+# Files and directories to ignore when building Docker image
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.yarn/
+.pnp/
+
+# Vue.js
+/dist/
+/node_modules/
+/.npm/
+/.yarn/
+/cache/
+/public/
+/src/
+/tests/
+/vue.config.js
+.babel.config.js
+.eslintignore
+.eslintrc.js
+.gitignore
