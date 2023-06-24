@@ -30,7 +30,7 @@ jobs:
         run: semantic-release -e @semantic-release/github
       
       - name: Set up Docker
-        uses: docker/setup-docker@v1
+        uses: docker/setup-docker@v2
 
       - name: Set Git Tag
         id: git_tag
