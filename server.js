@@ -13,7 +13,11 @@ var corsOptions = {
 };
 
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors({
+  // Add additional CORS options as needed to support CRUD
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 
 // app.use(cors(corsOptions));
 
