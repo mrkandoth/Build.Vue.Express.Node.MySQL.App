@@ -9,10 +9,13 @@ const app = express();
 app.use(express.static(path));
 
 var corsOptions = {
-  origin: "*"
+  origin: "http://localhost:8081"
 };
 
-app.use(cors(corsOptions));
+// Enable CORS for all routes
+app.use(cors());
+
+// app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
