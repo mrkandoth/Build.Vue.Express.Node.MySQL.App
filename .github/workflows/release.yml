@@ -66,4 +66,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       - name: Deploy to AWS ECS Fargate
         run: |
-          aws ecs update-service --cluster CLUSTER_NAME --service SERVICE_NAME --force-new-deployment
+          aws ecs update-service --cluster ${{ env.CLUSTER_NAME }} --service ${{ env.SERVICE_NAME }} --force-new-deployment
