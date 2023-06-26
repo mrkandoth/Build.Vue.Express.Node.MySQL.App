@@ -9,7 +9,7 @@ An e2e CI/CD pipeline for one of the Bezkoder example CURD app built using VueJS
 
 1. Run the following docker compose command to bring up a local env
 ```javascript
-docker compuse up -d 
+docker compose up -d
 ```
 
 2. Access the application at http://localhost:8080
